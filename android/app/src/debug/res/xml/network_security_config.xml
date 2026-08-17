@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug-only: audioplayers' underlying ExoPlayer/MediaPlayer enforces
+  Android's cleartext-HTTP block strictly (unlike Dio's JSON requests,
+  which don't go through Android's own network stack), so streaming
+  app-sound previews from the local dev backend fails silently without
+  this. Scoped to src/debug so release builds keep the default HTTPS-only
+  policy — the production API will be HTTPS anyway.
+-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">127.0.0.1</domain>
+        <domain includeSubdomains="false">localhost</domain>
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

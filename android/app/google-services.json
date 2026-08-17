@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525091416130",
+    "project_id": "memevibe-a46a1",
+    "storage_bucket": "memevibe-a46a1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525091416130:android:e7dfaf7a1e6b47fb13a5db",
+        "android_client_info": {
+          "package_name": "com.memevibe.statusmaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBs-AAyFvQVxJkirJJdc5HNRhFGSd3MNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
